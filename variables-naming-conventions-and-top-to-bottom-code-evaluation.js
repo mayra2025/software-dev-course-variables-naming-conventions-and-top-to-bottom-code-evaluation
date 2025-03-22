@@ -24,9 +24,20 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+let userName = "Alice";//variable name unclear, changed to userName
+let itemsBought = 5;//variable name unclear, changed to itemsBought
+let costPerItem = 20;//variable name unclear, changed to costPerItem
+let displayMessage = userName + " bought " + itemsBought + " items for $" + costPerItem + ".";//variable name unclear, updated with new variables 
 
-console.log(d);
+// creating function to calculate total cost of items bought
+function calculateTotalCost(itemsBought, costPerItem) { 
+  return itemsBought * costPerItem;
+}
+
+let totalCost = calculateTotalCost(itemsBought, costPerItem); //added variable1
+let totalCostMessage = "Total is $" + totalCost + ".";//added variable2
+
+console.log(displayMessage);
+console.log(totalCostMessage);//added total message 
+
+
